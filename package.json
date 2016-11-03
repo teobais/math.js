@@ -8,5 +8,13 @@
     "type": "git"
   },
   "author": "Thodoris Bais <thodoris.bais@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^3.0.1",
+    "mocha": "^3.1.2"
+  }
 }
