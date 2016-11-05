@@ -9,6 +9,12 @@
   },
   "author": "Thodoris Bais <thodoris.bais@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "math",
+    "mathematics",
+    "functions",
+    "numeric"
+  ],
   "scripts": {
     "test": "gulp test"
   },
