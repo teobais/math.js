@@ -16,7 +16,7 @@
     "numeric"
   ],
   "scripts": {
-    "test": "gulp test"
+    "test": "jasmine-node spec"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
