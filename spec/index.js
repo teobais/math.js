@@ -1,4 +1,5 @@
 const assert = require('assert');
+const request = require('request');
 var math = require('../index');
 
 describe('#math.js', function() {
@@ -30,7 +31,17 @@ describe('#math.js', function() {
         it('1 decimal', function() {
             assert.equal(math.format(1.23e-10, 1), 0.0 );
         });
+    });
+    
+    describe("Testing function", function() {
+        it("true scenario", function() {
+            console.log(math.randomArr([1,2,3,4,5]))
+            expect([1,2,3,4,5].toContain(math.randomArr([1,2,3,4,5])));
+        });
         
+        // it("false scenario", function() {
+ //            assert.ifError(math.randomArr([1,100,43,2]) in [4,5]);
+ //        });
     })
     
 });
