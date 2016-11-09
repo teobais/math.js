@@ -30,7 +30,7 @@ describe('#math.js', function() {
         });
     });
     
-    describe("Testing function", function() {
+    describe("Testing randomElement function", function() {
         it("true scenario", function() {
             expect([1,2,3,4,5]).toContain( math.randomElement([1,2,3,4,5]) );
         });
