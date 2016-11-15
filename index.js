@@ -10,6 +10,14 @@ module.exports = {
     
     randomElement: function(arr) {
         return arr[Math.floor(Math.random() * arr.length)];
+    },
+    
+    square: function(val) {
+        return val * val;
+    },
+    
+    cube: function(val) {
+        return val * val * val;
     }
 
 }

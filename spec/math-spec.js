@@ -38,7 +38,28 @@ describe('#math.js', function() {
         it("false scenario", function() {
             expect([534,34,435]).not.toContain( math.randomElement([1,2,3,4,5]) );
         });
+    });
+    
+    describe("Testing square function", function() {
+        it("square of 3", function() {
+            expect(math.square(3)).toEqual(9);
+        });
+        
+        it("square of 15", function() {
+            expect(math.square(15)).toEqual(225);
+        });
+    });
+    
+    describe("Testing cube function", function() {
+        it("cube of 3", function() {
+            expect(math.cube(3)).toEqual(27);
+        });
+        
+        it("cube of 0", function() {
+            expect(math.cube(0)).toEqual(0);
+        });
     })
+    
     
 });
 
