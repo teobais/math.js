@@ -18,6 +18,10 @@ module.exports = {
     
     cube: function(val) {
         return val * val * val;
+    },
+    
+    between: function (val, min, max) {
+        return min<=val==val<=max; 
     }
 
 }

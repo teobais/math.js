@@ -58,6 +58,22 @@ describe('#math.js', function() {
         it("cube of 0", function() {
             expect(math.cube(0)).toEqual(0);
         });
+    });
+    
+    describe("Testing between function", function() {
+        it("4 is out of [7,10]", function() {
+            expect(math.between(4, 7, 10)).toBeFalsy();
+        });
+        
+        it("4 is in [4,10]", function() {
+            expect(math.between(4, 4, 10)).toBeTruthy();
+        });
+        
+        it("4 is in [3,10]", function() {
+            expect(math.between(4, 3, 10)).toBeTruthy();
+        });
+        
+
     })
     
     
