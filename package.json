@@ -16,10 +16,9 @@
     "numeric"
   ],
   "scripts": {
-    "test": "istanbul cover --include-all-sources jasmine-node spec"
+    "test": "istanbul cover  jasmine-node spec"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
     "istanbul": "^0.4.5",
     "jasmine-node": "^1.14.5"
   }
