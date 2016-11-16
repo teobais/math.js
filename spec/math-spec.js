@@ -72,8 +72,6 @@ describe('#math.js', function() {
         it("4 is in [3,10]", function() {
             expect(math.between(4, 3, 10)).toBeTruthy();
         });
-        
-
     })
     
     
