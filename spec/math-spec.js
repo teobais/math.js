@@ -72,7 +72,18 @@ describe('#math.js', function() {
         it("4 is in [3,10]", function() {
             expect(math.between(4, 3, 10)).toBeTruthy();
         });
-    })
+    });
+    
+    describe("Testing temperature functions", function() {
+        it("37°C is 98.6°F", function() {
+            expect(math.toFahrenheit(37)).toEqual(98.6);
+        });
+        
+        it("98.6°F is 37°C", function() {
+            expect(math.toCelsius(98.6)).toEqual(37);
+        });
+    });
+    
     
     
 });

@@ -22,6 +22,14 @@ module.exports = {
     
     between: function (val, min, max) {
         return min<=val==val<=max; 
+    },
+    
+    toFahrenheit: function(val) {
+        return val * 9/5 + 32;
+    },
+    
+    toCelsius: function(val) {
+        return (val - 32) * 5/9;
     }
 
 }
