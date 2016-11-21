@@ -2,9 +2,7 @@
 > A simple math library written in Javascript
 
 ## Install
-```
-$ npm install math.js
-```
+[![https://nodei.co/npm/math.js.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/math.js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/math.js)
 
 ## Use
 ```javascript
