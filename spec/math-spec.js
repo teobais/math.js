@@ -30,13 +30,21 @@ describe('#math.js', function() {
         });
     });
     
-    describe("Testing randomElement function", function() {
+    describe("Testing array functions", function() {
         it("true scenario", function() {
             expect([1,2,3,4,5]).toContain( math.randomElement([1,2,3,4,5]) );
         });
         
         it("false scenario", function() {
             expect([534,34,435]).not.toContain( math.randomElement([1,2,3,4,5]) );
+        });
+        
+        it("100 should be the max of [1, 2, 100]", function() {
+            expect(math.maxElement([1,2,100])).toEqual(100);
+        });
+        
+        it("-10 should be the min of [1, -10, 10, 100]", function() {
+            expect(math.minElement([1, -10, 10, 100])).toEqual(-10);
         });
     });
     
@@ -82,8 +90,25 @@ describe('#math.js', function() {
         it("98.6°F is 37°C", function() {
             expect(math.toCelsius(98.6)).toEqual(37);
         });
+        it("98sd.6°F is 37°C", function() {
+            expect(math.maxElement([1,2,100])).toEqual(100);
+        });
+        
     });
     
+    describe("Testing array functions", function() {
+        it("37°C is 98.6°F", function() {
+            expect(math.toFahrenheit(37)).toEqual(98.6);
+        });
+        
+        it("98.6°F is 37°C", function() {
+            expect(math.toCelsius(98.6)).toEqual(37);
+        });
+        it("98sd.6°F is 37°C", function() {
+            expect(math.maxElement([1,2,100])).toEqual(100);
+        });
+        
+    });    
     
     
 });

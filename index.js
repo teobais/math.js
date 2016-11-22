@@ -12,6 +12,14 @@ module.exports = {
         return arr[Math.floor(Math.random() * arr.length)];
     },
     
+    minElement: function(arr) {
+        return Math.min.apply(null, arr);
+    },
+    
+    maxElement: function(arr) {
+        return Math.max.apply(null, arr);
+    },
+    
     square: function(val) {
         return val * val;
     },
