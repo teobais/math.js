@@ -90,26 +90,8 @@ describe('#math.js', function() {
         it("98.6°F is 37°C", function() {
             expect(math.toCelsius(98.6)).toEqual(37);
         });
-        it("98sd.6°F is 37°C", function() {
-            expect(math.maxElement([1,2,100])).toEqual(100);
-        });
         
     });
-    
-    describe("Testing array functions", function() {
-        it("37°C is 98.6°F", function() {
-            expect(math.toFahrenheit(37)).toEqual(98.6);
-        });
-        
-        it("98.6°F is 37°C", function() {
-            expect(math.toCelsius(98.6)).toEqual(37);
-        });
-        it("98sd.6°F is 37°C", function() {
-            expect(math.maxElement([1,2,100])).toEqual(100);
-        });
-        
-    });    
-    
     
 });
 
