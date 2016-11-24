@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/math.js.svg)](https://badge.fury.io/js/math.js)  ![Dependencies](https://david-dm.org/toubou91/math.js.svg)
+[![npm version](https://badge.fury.io/js/math.js.svg)](https://badge.fury.io/js/math.js)  ![Dependencies](https://david-dm.org/toubou91/math.js.svg) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
 # math.js
 > A simple math library written in Javascript
@@ -26,5 +26,3 @@ Then, run the tests
 ```
 $ npm test
 ```
-
-## Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
