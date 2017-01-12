@@ -31,6 +31,15 @@ module.exports = {
     between: function (val, min, max) {
         return min<=val==val<=max; 
     },
+
+    greatestCommonDivisor: function gcd(x, y) {
+        var remainder = x % y;
+        if (remainder === 0) {
+            return y;
+        }
+
+        return gcd(y, remainder);
+    },
     
     toFahrenheit: function(val) {
         return val * 9/5 + 32;
