@@ -47,6 +47,10 @@ module.exports = {
     
     toCelsius: function(val) {
         return (val - 32) * 5/9;
+    },
+
+    factorial: function f(n) {
+        return n * (n-1);
     }
 
-}
+};

@@ -94,14 +94,29 @@ describe('#math.js', function() {
     });
 
     describe("Testing greatestCommonDivisor function", function() {
-        it("GCD of 2 and 6 is 2", function() {
-            expect(math.greatestCommonDivisor(2,6)).toEqual(2);
+        it("GCD of 2 and 6 is 2", function () {
+            expect(math.greatestCommonDivisor(2, 6)).toEqual(2);
         });
 
-        it("GCD of 72 and 24 is 24", function() {
-            expect(math.greatestCommonDivisor(72,24)).toEqual(24);
+        it("GCD of 72 and 24 is 24", function () {
+            expect(math.greatestCommonDivisor(72, 24)).toEqual(24);
         });
+    });
 
+
+    describe("Testing factorial function", function() {
+        it("factorial of 3 is 6", function() {
+            expect(math.factorial(3)).toEqual(6);
+        });
+        it("factorial of 5 is 20", function() {
+            expect(math.factorial(5)).toEqual(20);
+        });
+        it("factorial of 6 is 120", function() {
+            expect(math.factorial(5)).toEqual(20);
+        });
+        it("factorial of 15 is not 20", function() {
+            expect(math.factorial(15)).toNotBe(20);
+        });
     });
     
 });
