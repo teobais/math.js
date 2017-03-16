@@ -40,6 +40,15 @@ module.exports = {
 
         return gcd(y, remainder);
     },
+
+    isPrime: function(n) {
+      for (var i = 2 ; i < n ; i++) {
+          if (n % i === 0) {
+              return false;
+          }
+      }
+      return n > 1;
+    },
     
     toFahrenheit: function(val) {
         return val * 9/5 + 32;

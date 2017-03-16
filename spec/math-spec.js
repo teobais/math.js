@@ -118,6 +118,15 @@ describe('#math.js', function() {
             expect(math.factorial(15)).toNotBe(20);
         });
     });
+
+    describe("Testing prime function", function() {
+        it("37 is prime", function() {
+            expect(math.isPrime(37)).toBeTruthy();
+        });
+        it("36 is not prime", function() {
+            expect(math.isPrime(36)).toBeFalsy();
+        });
+    });
     
 });
 
