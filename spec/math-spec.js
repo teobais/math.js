@@ -127,6 +127,24 @@ describe('#math.js', function() {
             expect(math.isPrime(36)).toBeFalsy();
         });
     });
+
+    describe("Testing even function", function() {
+        it("42 is even", function() {
+            expect(math.isEven(42)).toBeTruthy();
+        });
+        it("31 is not even", function() {
+            expect(math.isEven(31)).toBeFalsy();
+        });
+    });
+
+    describe("Testing odd function", function() {
+        it("7 is even", function() {
+            expect(math.isOdd(7)).toBeTruthy();
+        });
+        it("14 is not even", function() {
+            expect(math.isOdd(14)).toBeFalsy();
+        });
+    });
     
 });
 

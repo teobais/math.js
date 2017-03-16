@@ -49,6 +49,14 @@ module.exports = {
       }
       return n > 1;
     },
+
+    isEven: function(n) {
+        return n % 2 === 0;
+    },
+
+    isOdd: function(n) {
+        return !this.isEven(n);
+    },
     
     toFahrenheit: function(val) {
         return val * 9/5 + 32;
