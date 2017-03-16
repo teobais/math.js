@@ -1,6 +1,6 @@
 {
   "name": "math.js",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "A simple math library written in Javascript.",
   "main": "index.js",
   "repository": {
