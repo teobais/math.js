@@ -66,7 +66,7 @@ module.exports = {
         return (val - 32) * 5/9;
     },
 
-    factorial: function f(n) {
+    factorial: function(n) {
         return n * (n-1);
     }
 
