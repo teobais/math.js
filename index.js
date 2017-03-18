@@ -68,6 +68,19 @@ module.exports = {
 
     factorial: function(n) {
         return n * (n-1);
+    },
+
+    log: function (n) {
+        return Math.log(n);
+    },
+
+
+    log2: function (n) {
+        return Math.log2(n);
+    },
+
+    log10: function (n) {
+        return Math.log10(n);
     }
 
 };
