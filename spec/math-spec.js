@@ -151,20 +151,20 @@ describe('#math.js', function() {
             expect(math.log(-1)).toBeNaN();
             expect(math.log(1)).toEqual(0);
             expect(math.log(10)).toEqual(2.302585092994046);
-            expect(math.log(0)).toEqual(-Infinity);
+            expect(math.log(0)).toBeNegativeInfinity();
         });
         it("Common log2 tests", function() {
             expect(math.log2(3)).toEqual(1.584962500721156);
             expect(math.log2(2)).toEqual(1);
             expect(math.log2(1)).toEqual(0);
-            expect(math.log2(0)).toEqual(-Infinity);
+            expect(math.log2(0)).toBeNegativeInfinity();
             expect(math.log2(-2)).toBeNaN();
             expect(math.log2(1024)).toEqual(10);
         });
         it("Common log10 tests", function() {
             expect(math.log10(2)).toEqual(0.3010299956639812);
             expect(math.log10(1)).toEqual(0);
-            expect(math.log10(0)).toEqual(-Infinity);
+            expect(math.log10(0)).toBeNegativeInfinity();
             expect(math.log10(-2)).toBeNaN();
             expect(math.log10(100000)).toEqual(5);
         });
