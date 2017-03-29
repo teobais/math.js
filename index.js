@@ -81,6 +81,15 @@ module.exports = {
 
     log10: function (n) {
         return Math.log10(n);
+    },
+
+    // Unit converters
+    yardsToFeet: function(n) {
+        return n * 3;
+    },
+
+    feetToYards: function(n) {
+        return (1 / 3) * n;
     }
 
 };

@@ -170,6 +170,15 @@ describe('#math.js', function() {
         });
 
     });
+
+    describe("Testing unit converters", function() {
+        it("3 yard is 9 feet", function() {
+            expect(math.yardsToFeet(3)).toEqual(9);
+        });
+        it("123 feet is 41 yard", function() {
+            expect(math.feetToYards(123)).toEqual(41);
+        });
+    });
     
 });
 
