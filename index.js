@@ -90,6 +90,22 @@ module.exports = {
 
     feetToYards: function(n) {
         return (1 / 3) * n;
+    },
+
+    yardsToInches: function(n) {
+        return n * 36;
+    },
+
+    inchesToYards: function(n) {
+        return 1 / 36 * n;
+    },
+
+    feetToInches: function(n) {
+        return 12 * n;
+    },
+
+    inchesToCentimeters: function(n) {
+        return 2.54 * n;
     }
 
 };
