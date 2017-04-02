@@ -4,7 +4,7 @@
 > A simple math library written in Javascript
 
 ## Install
-[![https://nodei.co/npm/math.js.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/math.js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/math.js)
+[![https://nodei.co/npm/math.js.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/math.js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/math.js) [![NPM](https://nodei.co/npm-dl/math.js.png?months=6&height=2)](https://nodei.co/npm/math.js)
 
 ## Use
 ```javascript
