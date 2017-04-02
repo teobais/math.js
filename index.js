@@ -104,8 +104,24 @@ module.exports = {
         return 12 * n;
     },
 
+    inchesToFeet: function(n) {
+        return 1 / 12 * n;
+    },
+
     inchesToCentimeters: function(n) {
         return 2.54 * n;
+    },
+
+    centimetersToInches: function(n) {
+        return 1 / 2.54 * n;
+    },
+
+    milesToYards: function(n) {
+        return 1760 * n;
+    },
+
+    yardsToMiles: function(n) {
+        return 1 / 1760 * n;
     }
 
 };
