@@ -122,6 +122,10 @@ module.exports = {
 
     yardsToMiles: function(n) {
         return 1 / 1760 * n;
+    },
+
+    yardsToMeters: function(n) {
+        return 0.9144 * n;
     }
 
 };
