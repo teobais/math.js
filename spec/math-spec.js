@@ -105,6 +105,7 @@ describe('#math.js', function() {
         expect(math.milesToYards(42)).toEqual(73920);
         expect(math.yardsToMiles(42)).toBeCloseTo(0.024, 0);
         expect(math.yardsToMeters(42)).toBeCloseTo(38.4048, 0);
+        expect(math.milesToInches(0.5)).toEqual(31680);
     });
 
 });
