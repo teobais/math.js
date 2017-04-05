@@ -120,6 +120,10 @@ module.exports = {
         return 1760 * n;
     },
 
+    milesToMeters: function(n) {
+        return 1609.344 * n;
+    },
+
     milesToInches: function(n) {
         return 63360 * n;
     },
