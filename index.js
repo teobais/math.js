@@ -104,6 +104,10 @@ module.exports = {
         return 12 * n;
     },
 
+    feetToMeters: function (n) {
+        return 0.3048 * n;
+    },
+
     inchesToFeet: function(n) {
         return 1 / 12 * n;
     },
