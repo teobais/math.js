@@ -132,6 +132,10 @@ module.exports = {
         return 63360 * n;
     },
 
+    milesToFeet: function(n) {
+        return 5280 * n;
+    },
+
     yardsToMiles: function(n) {
         return 1 / 1760 * n;
     },
