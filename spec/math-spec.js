@@ -109,6 +109,7 @@ describe('#math.js', function() {
         expect(math.milesToInches(0.5)).toEqual(31680);
         expect(math.milesToFeet(2.6)).toEqual(13728);
         expect(math.feetToMeters(32)).toEqual(9.7536);
+        expect(math.feetToMiles(40000)).toBeCloseTo(7.6, 0);
     });
 
 });
