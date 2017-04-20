@@ -100,6 +100,10 @@ module.exports = {
         return 1 / 36 * n;
     },
 
+    inchesToMiles: function(n) {
+        return 1 / 63360 * n;
+    },
+
     feetToInches: function(n) {
         return 12 * n;
     },
