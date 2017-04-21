@@ -94,23 +94,21 @@ describe('#math.js', function() {
     });
 
     it("Testing unit converters", function() {
-        expect(math.yardsToFeet(3)).toEqual(9);
-        expect(math.feetToYards(123)).toEqual(41);
-        expect(math.yardsToInches(42)).toEqual(1512);
-        expect(math.inchesToYards(42)).toBeCloseTo(1.17, 0);
         expect(math.feetToInches(3)).toEqual(36);
-        expect(math.inchesToCentimeters(42)).toEqual(106.68);
-        expect(math.inchesToMiles(45000)).toBeCloseTo(0.71, 0);
-        expect(math.centimetersToInches(42)).toBeCloseTo(16.54, 0);
-        expect(math.inchesToFeet(42)).toEqual(3.5);
-        expect(math.milesToYards(42)).toEqual(73920);
-        expect(math.milesToMeters(11)).toBeCloseTo(17702.8, 0);
-        expect(math.yardsToMiles(42)).toBeCloseTo(0.024, 0);
-        expect(math.yardsToMeters(42)).toBeCloseTo(38.4048, 0);
-        expect(math.milesToInches(0.5)).toEqual(31680);
-        expect(math.milesToFeet(2.6)).toEqual(13728);
         expect(math.feetToMeters(32)).toEqual(9.7536);
         expect(math.feetToMiles(40000)).toBeCloseTo(7.6, 0);
+        expect(math.feetToYards(123)).toEqual(41);
+        expect(math.inchesToFeet(42)).toEqual(3.5);
+        expect(math.inchesToMiles(45000)).toBeCloseTo(0.71, 0);
+        expect(math.inchesToYards(42)).toBeCloseTo(1.17, 0);
+        expect(math.milesToFeet(2.6)).toEqual(13728);
+        expect(math.milesToInches(0.5)).toEqual(31680);
+        expect(math.milesToMeters(11)).toBeCloseTo(17702.8, 0);
+        expect(math.milesToYards(42)).toEqual(73920);
+        expect(math.yardsToFeet(3)).toEqual(9);
+        expect(math.yardsToInches(42)).toEqual(1512);
+        expect(math.yardsToMeters(42)).toBeCloseTo(38.4048, 0);
+        expect(math.yardsToMiles(42)).toBeCloseTo(0.024, 0);
     });
 
 });
