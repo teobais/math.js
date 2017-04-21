@@ -99,6 +99,7 @@ describe('#math.js', function() {
         expect(math.feetToMiles(40000)).toBeCloseTo(7.6, 0);
         expect(math.feetToYards(123)).toEqual(41);
         expect(math.inchesToFeet(42)).toEqual(3.5);
+        expect(math.inchesToMeters(123)).toEqual(3.1242);
         expect(math.inchesToMiles(45000)).toBeCloseTo(0.71, 0);
         expect(math.inchesToYards(42)).toBeCloseTo(1.17, 0);
         expect(math.milesToFeet(2.6)).toEqual(13728);
