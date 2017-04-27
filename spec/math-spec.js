@@ -1,4 +1,5 @@
 var math = require('../index');
+var constants = require('../lib/constants');
 
 describe('#math.js', function() {
 
@@ -111,6 +112,13 @@ describe('#math.js', function() {
         expect(math.yardsToMeters(42)).toBeCloseTo(38.4048, 0);
         expect(math.yardsToMiles(42)).toBeCloseTo(0.024, 0);
     });
+
+    it("Testing trigonometric functions", function() {
+        expect(math.sin(0)).toEqual(0);
+        expect(math.sin(1)).toBeCloseTo(0.8, 0);
+        expect(math.sin(constants.PI / 2)).toEqual(1);
+        expect(math.sin(constants.PI / 4)).toBeCloseTo(Math.sqrt(2)/2, 0); // also provide a function for Math.sqrt()
+    })
 
 });
 
