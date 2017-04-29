@@ -151,6 +151,10 @@ module.exports = {
     // Trigonometric functions
     sin: function (n) {
         return Math.sin(n);
+    },
+
+    cos: function(n) {
+        return Math.cos(n);
     }
 
 };

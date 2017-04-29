@@ -118,6 +118,8 @@ describe('#math.js', function() {
         expect(math.sin(1)).toBeCloseTo(0.8, 0);
         expect(math.sin(constants.PI / 2)).toEqual(1);
         expect(math.sin(constants.PI / 4)).toBeCloseTo(Math.sqrt(2)/2, 0); // also provide a function for Math.sqrt()
+        expect(math.cos(0)).toEqual(1);
+        expect(math.cos(constants.PI)).toEqual(-1);
     })
 
 });
