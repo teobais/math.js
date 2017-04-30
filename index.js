@@ -4,6 +4,10 @@ module.exports = {
         return Math.ceil(val / 10) * 10;
     },
 
+    round: function(n) {
+        return Math.round(n);
+    },
+
     format: function(val, decimals) {
         return ( val.toFixed(decimals) )/1;
     },

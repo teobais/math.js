@@ -9,6 +9,12 @@ describe('#math.js', function() {
         expect(math.ceil(90)).toEqual(90);
     });
 
+    it("Testing round function", function () {
+        expect(math.round(13)).toEqual(13);
+        expect(math.round(11.4)).toEqual(11);
+        expect(math.round(-20.51)).toEqual(-21);
+    });
+
     it("Testing format function", function() {
         expect(math.format(4.66364, 2)).toEqual(4.66);
         expect(math.format(4.66364, 1)).toEqual(4.7);
