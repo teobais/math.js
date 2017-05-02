@@ -8,6 +8,10 @@ module.exports = {
         return Math.round(n);
     },
 
+    floor: function(n) {
+        return Math.floor(n);
+    },
+
     format: function(val, decimals) {
         return ( val.toFixed(decimals) )/1;
     },

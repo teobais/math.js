@@ -15,6 +15,12 @@ describe('#math.js', function() {
         expect(math.round(-20.51)).toEqual(-21);
     });
 
+    it("Testing floor function", function () {
+        expect(math.floor(45.95)).toEqual(45);
+        expect(math.floor(-45.95)).toEqual(-46);
+        expect(math.floor(5)).toEqual(5);
+    });
+
     it("Testing format function", function() {
         expect(math.format(4.66364, 2)).toEqual(4.66);
         expect(math.format(4.66364, 1)).toEqual(4.7);
