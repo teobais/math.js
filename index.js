@@ -82,13 +82,16 @@ module.exports = {
         return Math.log(n);
     },
 
-
     log2: function (n) {
         return Math.log2(n);
     },
 
     log10: function (n) {
         return Math.log10(n);
+    },
+
+    log1p: function(n) {
+        return Math.log1p(n);
     },
 
     // Unit converters

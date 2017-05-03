@@ -106,6 +106,12 @@ describe('#math.js', function() {
         expect(math.log10(100000)).toEqual(5);
     });
 
+    it("Common log1p tests", function() {
+        expect(math.log1p(1)).toBeCloseTo(0.693, 0);
+        expect(math.log1p(-1)).toBeNegativeInfinity();
+        expect(math.log1p(-2)).toBeNaN;
+    });
+
     it("Testing unit converters", function() {
         expect(math.feetToInches(3)).toEqual(36);
         expect(math.feetToMeters(32)).toEqual(9.7536);
