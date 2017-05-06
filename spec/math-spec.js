@@ -21,6 +21,15 @@ describe('#math.js', function() {
         expect(math.floor(5)).toEqual(5);
     });
 
+    it("Testing drop digit functions", function () {
+        expect(math.dropFirstDigit(4595)).toEqual(595);
+        expect(math.dropFirstDigit(12345987)).toEqual(2345987);
+        expect(math.dropLastDigit(12345987)).toEqual(1234598);
+        expect(math.dropLastDigit(65890)).toEqual(6589);
+        expect(math.dropDigit(65890,3)).toEqual(6590);
+        expect(math.dropDigit(12853468,7)).toEqual(1285348);
+    });
+
     it("Testing format function", function() {
         expect(math.format(4.66364, 2)).toEqual(4.66);
         expect(math.format(4.66364, 1)).toEqual(4.7);

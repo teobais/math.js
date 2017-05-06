@@ -78,6 +78,18 @@ module.exports = {
         return n * (n-1);
     },
 
+    dropFirstDigit: function(n) {
+        return Number(n.toString().substring(1));
+    },
+
+    dropLastDigit: function(n) {
+        return Number(n.toString().substring(0, n.toString().length-1));
+    },
+
+    dropDigit: function(n, pos) {
+        return Number(n.toString().substring(0, pos-1).concat(n.toString().substring(pos, n)));
+    },
+
     log: function (n) {
         return Math.log(n);
     },
