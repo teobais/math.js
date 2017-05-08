@@ -36,6 +36,12 @@ describe('#math.js', function() {
         expect(math.format(1.23e-10, 1)).toEqual(0.0);
     });
 
+    it("Testing abs function", function() {
+        expect(math.abs(-4)).toEqual(4);
+        expect(math.abs(14)).toEqual(14);
+        expect(math.abs(-14.4)).toEqual(14.4);
+    });
+
     it("Testing array functions", function() {
         expect([1,2,3,4,5]).toContain( math.randomElement([1,2,3,4,5]) );
         expect([534,34,435]).not.toContain( math.randomElement([1,2,3,4,5]) );

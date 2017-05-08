@@ -15,6 +15,10 @@ module.exports = {
     format: function(val, decimals) {
         return ( val.toFixed(decimals) )/1;
     },
+
+    abs: function(n) {
+        return Math.abs(n)
+    },
     
     randomElement: function(arr) {
         return arr[Math.floor(Math.random() * arr.length)];
