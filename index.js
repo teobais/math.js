@@ -8,8 +8,17 @@ module.exports = {
         return Math.round(n);
     },
 
+    /**
+     * Returns the largest integer less than or equal to the given number.
+     * @param n
+     * @returns {number}
+     */
     floor: function(n) {
         return Math.floor(n);
+    },
+
+    random: function() {
+        return Math.random();
     },
 
     format: function(val, decimals) {
@@ -182,6 +191,10 @@ module.exports = {
 
     cos: function(n) {
         return Math.cos(n);
+    },
+
+    acos: function(n) {
+        return Math.acos(n);
     }
 
 };

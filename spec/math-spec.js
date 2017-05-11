@@ -21,6 +21,10 @@ describe('#math.js', function() {
         expect(math.floor(5)).toEqual(5);
     });
 
+    it("Testing random function", function () {
+        expect(math.random()).toEqual(jasmine.any(Number));
+    });
+
     it("Testing drop digit functions", function () {
         expect(math.dropFirstDigit(4595)).toEqual(595);
         expect(math.dropFirstDigit(12345987)).toEqual(2345987);
@@ -124,7 +128,7 @@ describe('#math.js', function() {
     it("Common log1p tests", function() {
         expect(math.log1p(1)).toBeCloseTo(0.693, 0);
         expect(math.log1p(-1)).toBeNegativeInfinity();
-        expect(math.log1p(-2)).toBeNaN;
+        expect(math.log1p(-2)).toBeNaN();
     });
 
     it("Testing unit converters", function() {
@@ -153,6 +157,10 @@ describe('#math.js', function() {
         expect(math.sin(constants.PI / 4)).toBeCloseTo(Math.sqrt(2)/2, 0); // also provide a function for Math.sqrt()
         expect(math.cos(0)).toEqual(1);
         expect(math.cos(constants.PI)).toEqual(-1);
+        expect(math.acos(-2)).toBeNaN();
+        expect(math.acos(2)).toBeNaN();
+        expect(math.acos(1)).toEqual(0);
+        expect(math.acos(0.5)).toBeCloseTo(1.047, 0);
     })
 
 });
