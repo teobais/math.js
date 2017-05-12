@@ -1,3 +1,5 @@
+var constants = require('./lib/constants');
+
 module.exports = {
 
     ceil: function(val) {
@@ -121,67 +123,67 @@ module.exports = {
 
     // Unit converters
     yardsToFeet: function(n) {
-        return n * 3;
+        return n * constants.YARDS_TO_FEET_FACTOR;
     },
 
     feetToYards: function(n) {
-        return (1 / 3) * n;
+        return n * constants.FEET_TO_YARDS_FACTOR;
     },
 
     yardsToInches: function(n) {
-        return n * 36;
+        return n * constants.YARDS_TO_INCHES_FACTOR;
     },
 
     inchesToYards: function(n) {
-        return 1 / 36 * n;
+        return constants.INCHES_TO_YARDS_FACTOR * n;
     },
 
     inchesToMiles: function(n) {
-        return 1 / 63360 * n;
+        return constants.INCHES_TO_MILES_FACTOR * n;
     },
 
     feetToInches: function(n) {
-        return 12 * n;
+        return constants.FEET_TO_INCHES_FACTOR * n;
     },
 
     feetToMeters: function (n) {
-        return 0.3048 * n;
+        return constants.FEET_TO_METERS_FACTOR * n;
     },
 
     feetToMiles: function(n) {
-        return 1/5280 * n;
+        return constants.FEET_TO_MILES_FACTOR * n;
     },
 
     inchesToFeet: function(n) {
-        return 1 / 12 * n;
+        return constants.INCHES_TO_FEET_FACTOR * n;
     },
 
     inchesToMeters: function(n) {
-        return 0.0254 * n;
+        return constants.INCHES_TO_METERS_FACTOR * n;
     },
 
     milesToYards: function(n) {
-        return 1760 * n;
+        return constants.MILES_TO_YARDS_FACTOR * n;
     },
 
     milesToMeters: function(n) {
-        return 1609.344 * n;
+        return constants.MILES_TO_METERS_FACTOR * n;
     },
 
     milesToInches: function(n) {
-        return 63360 * n;
+        return constants.MILES_TO_INCHES_FACTOR * n;
     },
 
     milesToFeet: function(n) {
-        return 5280 * n;
+        return constants.MILES_TO_FEET_FACTOR * n;
     },
 
     yardsToMiles: function(n) {
-        return 1 / 1760 * n;
+        return constants.YARDS_TO_MILES_FACTOR * n;
     },
 
     yardsToMeters: function(n) {
-        return 0.9144 * n;
+        return constants.YARDS_TO_METERS_FACTOR * n;
     },
 
     // Trigonometric functions
