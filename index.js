@@ -197,6 +197,10 @@ module.exports = {
 
     acos: function(n) {
         return Math.acos(n);
+    },
+
+    asin: function(n) {
+        return Math.asin(n);
     }
 
 };

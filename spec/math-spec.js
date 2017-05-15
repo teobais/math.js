@@ -161,6 +161,9 @@ describe('#math.js', function() {
         expect(math.acos(2)).toBeNaN();
         expect(math.acos(1)).toEqual(0);
         expect(math.acos(0.5)).toBeCloseTo(1.047, 0);
+        expect(math.asin(-2)).toBeNaN();
+        expect(math.asin(0)).toEqual(0);
+        expect(math.asin(1)).toBeCloseTo(1.57, 0);
     })
 
 });
