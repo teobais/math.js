@@ -164,6 +164,10 @@ describe('#math.js', function() {
         expect(math.asin(-2)).toBeNaN();
         expect(math.asin(0)).toEqual(0);
         expect(math.asin(1)).toBeCloseTo(1.57, 0);
+        expect(math.acosh(-1)).toBeNaN();
+        expect(math.acosh(0)).toBeNaN();
+        expect(math.acosh(1)).toEqual(0);
+        expect(math.acosh(2)).toBeCloseTo(1.32, 0);
     })
 
 });

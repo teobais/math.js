@@ -201,6 +201,10 @@ module.exports = {
 
     asin: function(n) {
         return Math.asin(n);
+    },
+
+    acosh: function(n) {
+        return Math.acosh(n);
     }
 
 };
