@@ -205,6 +205,10 @@ module.exports = {
 
     acosh: function(n) {
         return Math.acosh(n);
+    },
+
+    atan: function(n) {
+        return Math.atan(n);
     }
 
 };

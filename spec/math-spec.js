@@ -168,6 +168,9 @@ describe('#math.js', function() {
         expect(math.acosh(0)).toBeNaN();
         expect(math.acosh(1)).toEqual(0);
         expect(math.acosh(2)).toBeCloseTo(1.32, 0);
+        expect(math.atan(0)).toEqual(0);
+        expect(math.atan(-0)).toEqual(-0);
+        expect(math.atan(Infinity)).toBeCloseTo(1.57, 0);
     })
 
 });
