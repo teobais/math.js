@@ -195,6 +195,10 @@ module.exports = {
         return Math.cos(n);
     },
 
+    tan: function(n) {
+        return Math.tan(n);
+    },
+
     acos: function(n) {
         return Math.acos(n);
     },

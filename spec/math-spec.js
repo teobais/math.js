@@ -157,6 +157,7 @@ describe('#math.js', function() {
         expect(math.sin(constants.PI / 4)).toBeCloseTo(Math.sqrt(2)/2, 0); // also provide a function for Math.sqrt()
         expect(math.cos(0)).toEqual(1);
         expect(math.cos(constants.PI)).toEqual(-1);
+        expect(math.tan(1)).toBeCloseTo(1.557, 0);
         expect(math.acos(-2)).toBeNaN();
         expect(math.acos(2)).toBeNaN();
         expect(math.acos(1)).toEqual(0);
