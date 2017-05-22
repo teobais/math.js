@@ -50,6 +50,10 @@ module.exports = {
     cube: function(val) {
         return val * val * val;
     },
+
+    sqrt: function(n) {
+        return Math.sqrt(n);
+    },
     
     between: function (val, min, max) {
         return min<=val==val<=max; 
