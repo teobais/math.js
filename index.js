@@ -217,6 +217,10 @@ module.exports = {
 
     atan: function(n) {
         return Math.atan(n);
+    },
+
+    atan2: function(n) {
+        return Math.atan2(n);
     }
 
 };
