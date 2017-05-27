@@ -68,6 +68,11 @@ describe('#math.js', function() {
         expect(math.sqrt(81)).toEqual(9);
     });
 
+    it("Testing exp function", function() {
+        expect(math.exp(0)).toEqual(1);
+        expect(math.exp(1)).toEqual(2.718281828459045);
+    });
+
     it("Testing between function", function() {
         expect(math.between(4, 7, 10)).toBeFalsy();
         expect(math.between(4, 4, 10)).toBeTruthy();

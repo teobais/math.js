@@ -54,6 +54,10 @@ module.exports = {
     sqrt: function(n) {
         return Math.sqrt(n);
     },
+
+    exp: function (n) {
+        return Math.exp(n);
+    },
     
     between: function (val, min, max) {
         return min<=val==val<=max; 
