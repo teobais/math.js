@@ -53,6 +53,11 @@ describe('#math.js', function() {
         expect(math.minElement([1, -10, 10, 100])).toEqual(-10);
     });
 
+    it("Testing pow function", function() {
+        expect(math.pow(3, 2)).toEqual(9);
+        expect(math.pow(3, 3)).toEqual(27);
+    });
+
     it("Testing square function", function() {
         expect(math.square(3)).toEqual(9);
         expect(math.square(15)).toEqual(225);

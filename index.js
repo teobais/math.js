@@ -42,6 +42,10 @@ module.exports = {
     maxElement: function(arr) {
         return Math.max.apply(null, arr);
     },
+
+    pow: function(base, exp) {
+        return Math.pow(base, exp);
+    },
     
     square: function(val) {
         return val * val;
