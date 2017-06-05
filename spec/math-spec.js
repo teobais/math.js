@@ -84,6 +84,12 @@ describe('#math.js', function() {
         expect(math.between(4, 3, 10)).toBeTruthy();
     });
 
+    it("Testing trunv function", function() {
+        expect(math.trunc(4.5632)).toEqual(4);
+        expect(math.trunc(-0.123)).toEqual(0);
+        expect(math.trunc(NaN)).toBeNaN();
+    });
+
     it("Testing temperature functions", function() {
         expect(math.toFahrenheit(37)).toEqual(98.6);
         expect(math.toCelsius(98.6)).toEqual(37);

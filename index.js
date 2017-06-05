@@ -67,6 +67,10 @@ module.exports = {
         return min<=val==val<=max; 
     },
 
+    trunc: function(n) {
+        return Math.trunc(n);
+    },
+
     greatestCommonDivisor: function gcd(x, y) {
         var remainder = x % y;
         if (remainder === 0) {
