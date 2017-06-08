@@ -73,6 +73,11 @@ describe('#math.js', function() {
         expect(math.sqrt(81)).toEqual(9);
     });
 
+    it("Testing cbrt function", function() {
+        expect(math.cbrt(27)).toEqual(3);
+        expect(math.cbrt(null)).toEqual(0);
+    });
+
     it("Testing exp function", function() {
         expect(math.exp(0)).toEqual(1);
         expect(math.exp(1)).toEqual(2.718281828459045);

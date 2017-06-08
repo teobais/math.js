@@ -59,6 +59,10 @@ module.exports = {
         return Math.sqrt(n);
     },
 
+    cbrt: function (n) {
+        return Math.cbrt(n);
+    },
+
     exp: function (n) {
         return Math.exp(n);
     },
