@@ -10,6 +10,10 @@ module.exports = {
         return Math.round(n);
     },
 
+    fround: function(n) {
+        return Math.fround(n)
+    },
+
     /**
      * Returns the largest integer less than or equal to the given number.
      * @param n
