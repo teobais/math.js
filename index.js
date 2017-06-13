@@ -70,6 +70,10 @@ module.exports = {
     exp: function (n) {
         return Math.exp(n);
     },
+
+    expm1: function(n) {
+        return Math.expm1(n);
+    },
     
     between: function (val, min, max) {
         return min<=val==val<=max; 
