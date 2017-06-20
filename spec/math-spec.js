@@ -111,6 +111,12 @@ describe('#math.js', function() {
         expect(math.toCelsius(98.6)).toEqual(37);
     });
 
+    it("Testing hypot function", function() {
+        expect(math.hypot(4,3)).toEqual(5);
+        expect(math.hypot(4,3,5)).toEqual(7.0710678118654755);
+        expect(math.hypot(-3)).toEqual(3);
+    });
+
     it("Testing greatestCommonDivisor function", function() {
         expect(math.greatestCommonDivisor(2, 6)).toEqual(2);
         expect(math.greatestCommonDivisor(72, 24)).toEqual(24);

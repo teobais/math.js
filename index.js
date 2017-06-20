@@ -74,6 +74,10 @@ module.exports = {
     expm1: function(n) {
         return Math.expm1(n);
     },
+
+    hypot: function(...arr) {
+        return Math.hypot(...arr);
+    },
     
     between: function (val, min, max) {
         return min<=val==val<=max; 
