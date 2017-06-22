@@ -38,6 +38,10 @@ module.exports = {
     randomElement: function(arr) {
         return arr[Math.floor(Math.random() * arr.length)];
     },
+
+    imul: function(a, b) {
+        return Math.imul(a, b);
+    },
     
     minElement: function(arr) {
         return Math.min.apply(null, arr);

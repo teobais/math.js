@@ -69,6 +69,11 @@ describe('#math.js', function() {
         expect(math.square(15)).toEqual(225);
     });
 
+    it("Testing imul function", function() {
+        expect(math.imul(2,4)).toEqual(8);
+        expect(math.imul(-2,-2)).toEqual(4);
+    });
+
     it("Testing cube function", function() {
         expect(math.cube(3)).toEqual(27);
         expect(math.cube(0)).toEqual(0);
