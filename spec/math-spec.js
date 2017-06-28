@@ -31,6 +31,12 @@ describe('#math.js', function() {
         expect(math.random()).toEqual(jasmine.any(Number));
     });
 
+    it("Testing sign function", function () {
+        expect(math.sign(3)).toEqual(1);
+        expect(math.sign(-3)).toEqual(-1);
+        expect(math.sign(NaN)).toBeNaN();
+    });
+
     it("Testing drop digit functions", function () {
         expect(math.dropFirstDigit(4595)).toEqual(595);
         expect(math.dropFirstDigit(12345987)).toEqual(2345987);

@@ -27,6 +27,10 @@ module.exports = {
         return Math.random();
     },
 
+    sign: function(n) {
+        return Math.sign(n);
+    },
+
     format: function(val, decimals) {
         return ( val.toFixed(decimals) )/1;
     },
