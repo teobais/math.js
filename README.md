@@ -1,10 +1,8 @@
-[![npm version](https://badge.fury.io/js/math.js.svg)](https://badge.fury.io/js/math.js)  ![Dependencies](https://david-dm.org/toubou91/math.js.svg) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
-
-# math.js
+# math.js [![npm](https://img.shields.io/npm/dt/math.js.svg)]() [![David](https://img.shields.io/david/toubou91/math.js.svg)]()
 > A simple math library written in Javascript
 
 ## Install
-[![https://nodei.co/npm/math.js.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/math.js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/math.js) [![NPM](https://nodei.co/npm-dl/math.js.png?months=6&height=2)](https://nodei.co/npm/math.js)
+[![https://nodei.co/npm/math.js.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/math.js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/math.js)
 
 ## Use
 ```javascript
