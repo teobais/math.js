@@ -118,8 +118,8 @@ describe('#math.js', function() {
     });
 
     it("Testing temperature functions", function() {
-        expect(math.toFahrenheit(37)).toEqual(98.6);
-        expect(math.toCelsius(98.6)).toEqual(37);
+        expect(math.toFahrenheit(37)).toBeCloseTo(98.6);
+        expect(math.toCelsius(98.6)).toBeCloseTo(37);
     });
 
     it("Testing hypot function", function() {
