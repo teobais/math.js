@@ -16,7 +16,8 @@
     "numeric"
   ],
   "scripts": {
-    "test": "istanbul cover  jasmine-node spec"
+    "test": "istanbul cover jasmine-node spec",
+    "wntest": "istanbul cover node_modules/jasmine-node-xt/bin/jasmine-node spec"
   },
   "devDependencies": {
     "istanbul": "^0.4.5",
