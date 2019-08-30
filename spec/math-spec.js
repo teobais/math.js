@@ -226,7 +226,25 @@ describe('#math.js', function() {
         expect(math.atan(0)).toEqual(0);
         expect(math.atan(-0)).toEqual(-0);
         expect(math.atan(Infinity)).toBeCloseTo(1.57, 0);
-    })
+    });
+
+    it("Testing d* arithmetic functions", function() {
+        expect(math.dCeil(12.56789, 3)).toEqual(12.568);
+        expect(math.dCeil(12.1234, 3)).toEqual(12.124);
+        expect(math.dCeil(12.1230, 3)).toEqual(12.123);
+
+        expect(math.dRound(12.56789, 3)).toEqual(12.568);
+        expect(math.dRound(12.1234, 3)).toEqual(12.123);
+        expect(math.dRound(12.1230, 3)).toEqual(12.123);
+        
+        expect(math.dFloor(12.56789, 3)).toEqual(12.567);
+        expect(math.dFloor(12.1234, 3)).toEqual(12.123);
+        expect(math.dFloor(12.1230, 3)).toEqual(12.123);
+        
+        expect(math.dTrunc(12.56789, 3)).toEqual(12.567);
+        expect(math.dTrunc(12.1234, 3)).toEqual(12.123);
+        expect(math.dTrunc(12.1230, 3)).toEqual(12.123);
+    });
 
 });
 
