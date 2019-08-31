@@ -1,5 +1,6 @@
 var math = require('../index');
 var constants = require('../lib/constants');
+var PI = constants.PI;
 
 describe('#math.js', function() {
 
@@ -207,10 +208,10 @@ describe('#math.js', function() {
     it("Testing trigonometric functions", function() {
         expect(math.sin(0)).toEqual(0);
         expect(math.sin(1)).toBeCloseTo(0.8, 0);
-        expect(math.sin(constants.PI / 2)).toEqual(1);
-        expect(math.sin(constants.PI / 4)).toBeCloseTo(constants.SQRT2 / 2, 0); // also provide a function for Math.sqrt()
+        expect(math.sin(PI / 2)).toEqual(1);
+        expect(math.sin(PI / 4)).toBeCloseTo(constants.SQRT2 / 2, 0); // also provide a function for Math.sqrt()
         expect(math.cos(0)).toEqual(1);
-        expect(math.cos(constants.PI)).toEqual(-1);
+        expect(math.cos(PI)).toEqual(-1);
         expect(math.tan(1)).toBeCloseTo(1.557, 0);
         expect(math.acos(-2)).toBeNaN();
         expect(math.acos(2)).toBeNaN();
@@ -226,6 +227,9 @@ describe('#math.js', function() {
         expect(math.atan(0)).toEqual(0);
         expect(math.atan(-0)).toEqual(-0);
         expect(math.atan(Infinity)).toBeCloseTo(1.57, 0);
+        expect(math.atan2(0, 1)).toEqual(0);
+        expect(math.atan2(1, 0)).toEqual(PI / 2);
+        expect(math.atan2(math.sqrt(3), 1)).toEqual(PI / 3);
     });
 
     it("Testing d* arithmetic functions", function() {
