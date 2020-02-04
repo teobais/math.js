@@ -4,7 +4,7 @@
   "description": "A simple math library written in Javascript.",
   "main": "index.js",
   "repository": {
-    "url": "https://github.com/toubou91/math.js.git",
+    "url": "https://github.com/thodorisbais/math.js.git",
     "type": "git"
   },
   "author": "Thodoris Bais <thodoris.bais@gmail.com>",
